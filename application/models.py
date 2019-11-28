@@ -1,6 +1,11 @@
 from django.db import models
 
 # Create your models here.
+
+class careers(models.Model):
+    career_name = models.CharField(max_length =200)
+
+
 class allcourses(models.Model):
     course_id = models.IntegerField()
     pro_code = models.IntegerField()
@@ -12,4 +17,4 @@ class allcourses(models.Model):
     cutoffpoints_2016_cp= models.FloatField()
     cutoffpoints_2017_cp= models.FloatField()
     cutoffpoints_2018_cp= models.FloatField()
-    course_id = models.IntegerField()
+    course_id = models.ForeignKey(careers)
