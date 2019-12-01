@@ -5,6 +5,9 @@ from django.db import models
 class careers(models.Model):
     career_name = models.CharField(max_length =200)
 
+    def __str__(self):
+        return self.career_name
+
 
 class allcourses(models.Model):
     course_id = models.IntegerField()
@@ -18,3 +21,7 @@ class allcourses(models.Model):
     cutoffpoints_2017_cp= models.FloatField()
     cutoffpoints_2018_cp= models.FloatField()
     course_id = models.ForeignKey(careers)
+
+
+    def __str__(self):
+        return self.course_name
