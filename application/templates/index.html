@@ -7,6 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Welcome maaaaafffwwwaaaccckkkkaaaaa</h1>
+    <h2> Ever thought of the course you can persue with your low grades???? ......worry no more <b>Career Guidance application<B> GOT YOU COVERED</b></h2>
+        <p> from as many as 1000 courses this application helps you decide on which career to persue on the current competitive world</p>
+
+        <h4> <b>here are some of the courses for you dumbHead:</b></h4>
+
+        
+        <ol>
+            {% for course in courses%}
+                <li>{{course.university}} </li>
+                <p>{{ course.course_name}}</p>
+            {%endfor %}
+        </ol>
+       
 </body>
 </html>

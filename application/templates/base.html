@@ -1,0 +1,300 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-6">
+                <div class="wrapper">
+                        <div class="inner">
+                            <div class="lo">
+                
+                                <br>
+                                <h1><span class="head"><strong>CAREER GUIDANCE</strong> </span> </h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                
+                                    <form class="guidanceForm" id="myform">
+                                        <b>
+                                            <h2 style="width: 100%"> course selection guide</h2>
+                                        </b>
+                                        <br>
+                
+                                        <b>SUBJECTS.....GRADES ATTAINED</b>
+                                        <br><br>
+                
+                                        <b>Overall KCSE Grade:</b>
+                                        <select id="grade">
+                                                <option value="0"> ------select your mean grade---------</option>
+                                                <option value="12">A</option>
+                                                <option value="11">A-</option>
+                                                <option value="10">B+</option>
+                                                <option value="9">B</option>
+                                                <option value="8">B-</option>
+                                                <option value="7">C+</option>
+                                                <option value="6">C</option>
+                                                <option value="5">C-</option>
+                                                <option value="4">D+</option>
+                                                <option value="3">D</option>
+                                                <option value="2">D-</option>
+                                                <option value="1">E</option>
+                                            </select><br><br>
+                
+                                        <p>Mathematics:
+                                            <select id="maths">
+                                                <option value="0"> ------select your grade---------</option>
+                                                <option value="12">A</option>
+                                                <option value="11">A-</option>
+                                                <option value="10">B+</option>
+                                                <option value="9">B</option>
+                                                <option value="8">B-</option>
+                                                <option value="7">C+</option>
+                                                <option value="6">C</option>
+                                                <option value="5">C-</option>
+                                                <option value="4">D+</option>
+                                                <option value="3">D</option>
+                                                <option value="2">D-</option>
+                                                <option value="1">E</option>
+                                            </select></p>
+                                        <p>
+                                            English:
+                                           <select id="english">
+                                                <option value="0"> ------select your grade---------</option>
+                                                <option value="12">A</option>
+                                                <option value="11">A-</option>
+                                                <option value="10">B+</option>
+                                                <option value="9">B</option>
+                                                <option value="8">B-</option>
+                                                <option value="7">C+</option>
+                                                <option value="6">C</option>
+                                                <option value="5">C-</option>
+                                                <option value="4">D+</option>
+                                                <option value="3">D</option>
+                                                <option value="2">D-</option>
+                                                <option value="1">E</option>
+                                            </select>
+                                        </p>
+                                        <p>
+                                            Kiswahili:
+                                            <select id="kiswahili">
+                                                <option value="0"> ------select your grade---------</option>
+                                                <option value="12">A</option>
+                                                <option value="11">A-</option>
+                                                <option value="10">B+</option>
+                                                <option value="9">B</option>
+                                                <option value="8">B-</option>
+                                                <option value="7">C+</option>
+                                                <option value="6">C</option>
+                                                <option value="5">C-</option>
+                                                <option value="4">D+</option>
+                                                <option value="3">D</option>
+                                                <option value="2">D-</option>
+                                                <option value="1">E</option>
+                                            </select>
+                                        </p>
+                                        <p>Physics:
+                                            <select id="physics">
+                                                <option value="0"> ------select your grade---------</option>
+                                                <option value="12">A</option>
+                                                <option value="11">A-</option>
+                                                <option value="10">B+</option>
+                                                <option value="9">B</option>
+                                                <option value="8">B-</option>
+                                                <option value="7">C+</option>
+                                                <option value="6">C</option>
+                                                <option value="5">C-</option>
+                                                <option value="4">D+</option>
+                                                <option value="3">D</option>
+                                                <option value="2">D-</option>
+                                                <option value="1">E</option>
+                                            </select>
+                                        </p>
+                                        <p>Geography:
+                                          <select id="geography">
+                                                <option value="0"> ------select your grade---------</option>
+                                                <option value="12">A</option>
+                                                <option value="11">A-</option>
+                                                <option value="10">B+</option>
+                                                <option value="9">B</option>
+                                                <option value="8">B-</option>
+                                                <option value="7">C+</option>
+                                                <option value="6">C</option>
+                                                <option value="5">C-</option>
+                                                <option value="4">D+</option>
+                                                <option value="3">D</option>
+                                                <option value="2">D-</option>
+                                                <option value="1">E</option>
+                                            </select>
+                                        </p>
+                                        <p> Biology:
+                                            <select id="biology">
+                                                <option value="0"> ------select your grade---------</option>
+                                                <option value="12">A</option>
+                                                <option value="11">A-</option>
+                                                <option value="10">B+</option>
+                                                <option value="9">B</option>
+                                                <option value="8">B-</option>
+                                                <option value="7">C+</option>
+                                                <option value="6">C</option>
+                                                <option value="5">C-</option>
+                                                <option value="4">D+</option>
+                                                <option value="3">D</option>
+                                                <option value="2">D-</option>
+                                                <option value="1">E</option>
+                                            </select>
+                                        </p>
+                                        <p>Chemistry:
+                                         <select id="chemistry">
+                                                <option value="0"> ------select your grade---------</option>
+                                                <option value="12">A</option>
+                                                <option value="11">A-</option>
+                                                <option value="10">B+</option>
+                                                <option value="9">B</option>
+                                                <option value="8">B-</option>
+                                                <option value="7">C+</option>
+                                                <option value="6">C</option>
+                                                <option value="5">C-</option>
+                                                <option value="4">D+</option>
+                                                <option value="3">D</option>
+                                                <option value="2">D-</option>
+                                                <option value="1">E</option>
+                                            </select>
+                                        </p>
+                                        <p>History:
+                                            <select id="history">
+                                                <option value="0"> ------select your grade---------</option>
+                                                <option value="12">A</option>
+                                                <option value="11">A-</option>
+                                                <option value="10">B+</option>
+                                                <option value="9">B</option>
+                                                <option value="8">B-</option>
+                                                <option value="7">C+</option>
+                                                <option value="6">C</option>
+                                                <option value="5">C-</option>
+                                                <option value="4">D+</option>
+                                                <option value="3">D</option>
+                                                <option value="2">D-</option>
+                                                <option value="1">E</option>
+                                            </select>
+                                        </p>
+                                        <p>CRE:
+                                           <select id="cre">
+                                                <option value="0"> ------select your grade---------</option>
+                                                <option value="12">A</option>
+                                                <option value="11">A-</option>
+                                                <option value="10">B+</option>
+                                                <option value="9">B</option>
+                                                <option value="8">B-</option>
+                                                <option value="7">C+</option>
+                                                <option value="6">C</option>
+                                                <option value="5">C-</option>
+                                                <option value="4">D+</option>
+                                                <option value="3">D</option>
+                                                <option value="2">D-</option>
+                                                <option value="1">E</option>
+                                            </select>
+                                        </p>
+                                        <p>Business studies:
+                                            <select id="bs">
+                                                <option value="0"> ------select your grade---------</option>
+                                                <option value="12">A</option>
+                                                <option value="11">A-</option>
+                                                <option value="10">B+</option>
+                                                <option value="9">B</option>
+                                                <option value="8">B-</option>
+                                                <option value="7">C+</option>
+                                                <option value="6">C</option>
+                                                <option value="5">C-</option>
+                                                <option value="4">D+</option>
+                                                <option value="3">D</option>
+                                                <option value="2">D-</option>
+                                                <option value="1">E</option>
+                                            </select>
+                                        </p>
+                                        <p>Computer:
+                                          <select id="comp">
+                                                <option value="0"> ------select your grade---------</option>
+                                                <option value="12">A</option>
+                                                <option value="11">A-</option>
+                                                <option value="10">B+</option>
+                                                <option value="9">B</option>
+                                                <option value="8">B-</option>
+                                                <option value="7">C+</option>
+                                                <option value="6">C</option>
+                                                <option value="5">C-</option>
+                                                <option value="4">D+</option>
+                                                <option value="3">D</option>
+                                                <option value="2">D-</option>
+                                                <option value="1">E</option>
+                                            </select>
+                                            </select>
+                                        </p>
+                                        <p>
+                                            French:
+                                            <select id="french">
+                                                <option value="0"> ------select your grade---------</option>
+                                                <option value="12">A</option>
+                                                <option value="11">A-</option>
+                                                <option value="10">B+</option>
+                                                <option value="9">B</option>
+                                                <option value="8">B-</option>
+                                                <option value="7">C+</option>
+                                                <option value="6">C</option>
+                                                <option value="5">C-</option>
+                                                <option value="4">D+</option>
+                                                <option value="3">D</option>
+                                                <option value="2">D-</option>
+                                                <option value="1">E</option>
+                                            </select>
+                                        </p>
+                                        <p>Agriculture:
+                                            <select id="agri">
+                                                <option value="0"> ------select your grade---------</option>
+                                                <option value="12">A</option>
+                                                <option value="11">A-</option>
+                                                <option value="10">B+</option>
+                                                <option value="9">B</option>
+                                                <option value="8">B-</option>
+                                                <option value="7">C+</option>
+                                                <option value="6">C</option>
+                                                <option value="5">C-</option>
+                                                <option value="4">D+</option>
+                                                <option value="3">D</option>
+                                                <option value="2">D-</option>
+                                                <option value="1">E</option>
+                                            </select>
+                                            
+                                        </p>
+                                        <br>
+                                        <button type="submit">SUBMIT</button>
+                
+                                        <br>
+                                    </form>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="col-md-6">
+            <ol>
+                    {% for i in course %}
+                        <li>{{i.course_name}}</li>
+                    {% endfor %}
+            </ol>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
